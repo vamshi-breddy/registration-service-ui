@@ -7,9 +7,9 @@
     <h1>{{message}}</h1>
 </div>
 
-<div class="container">
+<div class="container" layout-align="center center" style="padding-left: 250px; padding-top: 50px;">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
             <form>
                 <fieldset>
                     <legend class="text-center">Valid information is required to register. <span class="req"><small>
@@ -19,13 +19,13 @@
                         <label for="Name"><span class="req">* </span> Name: <small>This will be your login user
                                 name</small> </label>
                         <input required type="text" [ngModel]="user?.name" (ngModelChange)="user.name= $event" name="name" id="name"
-                            class="form-control phone" maxlength="28" placeholder="Enter your fullname..." />
+                            class="form-control phone" maxlength="28" placeholder="fullname" />
                     </div>
 
                     <div class="form-group">
                         <label for="firstname"><span class="req">* </span> Email: </label>
                         <input class="form-control" type="text" [ngModel]="user?.email" (ngModelChange)="user.email= $event" name="email" id="txt" required
-                            placeholder="Enter valid email address" />
+                            placeholder="email address" />
                         <div id="errFirst"></div>
                     </div>
 

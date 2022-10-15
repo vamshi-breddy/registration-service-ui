@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileComponent } from './profile/profile.component';
 import {MatButtonModule} from '@angular/material/button';
+import { SecurityComponent } from './security/security.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {MatButtonModule} from '@angular/material/button';
     HeaderComponent,
     FooterComponent,
     ProfileComponent,
+    SecurityComponent,
   ],
   imports: [
     BrowserModule,

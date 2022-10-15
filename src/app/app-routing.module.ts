@@ -4,6 +4,7 @@ import { ExcelUploadComponent } from './excel-upload/excel-upload.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { SearchDeleteComponent } from './search-delete/search-delete.component';
+import { SecurityComponent } from './security/security.component';
 
 const routes: Routes = [
   {path:"",redirectTo:"register",pathMatch:"full"},
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path:"search",component:SearchDeleteComponent},
   {path:"excel",component:ExcelUploadComponent},
   {path:"profile",component:ProfileComponent},
+  {path:"register",component:SecurityComponent}
 ];
 
 @NgModule({
